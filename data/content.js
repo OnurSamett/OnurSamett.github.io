@@ -279,7 +279,7 @@ export const UI = {
     email: "E-posta",
     discover: "Keşfet",
     profile: "Profil",
-    whoAmI: "Kim<br>miyim?",
+    whoAmI: "Ben<br>kimim?",
     aboutDesc: "Full-stack geliştirme, yapay zeka ve veri analitiği odaklı bir mühendis adayıyım. Temiz kod ve uçtan uca entegrasyon benim için vazgeçilmez.",
     career: "Kariyer",
     experience: "Deneyim",
