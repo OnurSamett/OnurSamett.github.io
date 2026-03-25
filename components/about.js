@@ -23,9 +23,9 @@ export function renderAbout() {
           <h2 class="section-heading">${ui.whoAmI}</h2>
         </div>
 
-        <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start">
-          <div class="rv d1" style="display:flex;flex-direction:column;gap:14px">
-            ${text.map(t => `<p style="font-size:var(--text-md);color:var(--text-secondary);line-height:1.85">${t}</p>`).join('')}
+        <div class="about-grid" style="display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:center">
+          <div class="rv d1" style="display:flex;flex-direction:column;gap:18px">
+            ${text.map(t => `<p style="font-size:1.1rem;color:var(--text-secondary);line-height:1.8">${t}</p>`).join('')}
           </div>
           <div style="display:flex;flex-direction:column;gap:8px">
             ${cards.map((c, i) => `
