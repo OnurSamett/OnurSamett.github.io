@@ -594,8 +594,8 @@ strong { color: var(--text); font-weight: 500; }
   .nav-links.open { opacity: 1; pointer-events: auto; }
   .nav-l { font-size: var(--text-md); }
 
-  .section-header { flex-direction: column; gap: 12px; }
-  .section-desc { max-width: 100%; }
+  .section-header { flex-direction: column; gap: 12px; align-items: flex-start !important; text-align: left; }
+  .section-desc { max-width: 100%; text-align: left; }
   .section-heading { font-size: clamp(2rem, 8vw, 3rem); line-height: 1.1; }
 
   .exp-card { padding: 22px 18px; }

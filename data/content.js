@@ -5,8 +5,8 @@ export const PERSONAL = {
   shortName: "onur samet",
   title: { tr: "Bilişim Sistemleri Müh. · Full-Stack Dev", en: "Information Systems Eng. · Full-Stack Dev" },
   description: {
-    tr: "Temiz kod standartlarında, donanım ve yazılımı entegre eden sistemler inşa ediyorum. Uluslararası iş birliklerine ve eğitimlere açığım.",
-    en: "I build systems that integrate hardware and software to clean code standards. Open to international collaborations and training.",
+    tr: "Temiz kod standartlarında, donanım ve yazılımı entegre eden sistemler inşa ediyorum.",
+    en: "I build high-performance systems that integrate hardware and software to clean code standards.",
   },
   email: "onurozkan0808@gmail.com",
   phone: "+90 545 809 04 63",
@@ -50,13 +50,13 @@ export const INFO_CARDS = {
 export const ABOUT_TEXT = {
   tr: [
     `Full-stack geliştirme, yapay zeka ve veri analitiği odaklı <strong>Bilişim Sistemleri Mühendisi</strong> adayıyım.`,
-    `<strong>OdakGIS'te</strong> kurumsal ölçekli GIS platformları geliştiriyor; <strong>TEKNOFEST</strong> otonom aracının YOLOv11 tabanlı Derin Öğrenme mimarisini yönetiyorum.`,
-    `Donanım ve yazılımı entegre eden, yüksek performanslı sistemler inşa ediyorum. <strong>Uluslararası iş birliklerine ve eğitimlere açığım.</strong>`,
+    `<strong>OdakGIS'te</strong> kurumsal ölçekli GIS platformları geliştiriyor; <strong>TEKNOFEST yarışmasında</strong> yarışacak otonom aracın YOLOv11 tabanlı Derin Öğrenme mimarisini yönetiyorum.`,
+    `Donanım ve yazılımı entegre eden, yüksek performanslı sistemler inşa ediyorum.`,
   ],
   en: [
     `I am an <strong>Information Systems Engineering</strong> student focused on full-stack development, artificial intelligence, and data analytics.`,
-    `At <strong>OdakGIS</strong>, I develop enterprise-scale GIS platforms; I lead the YOLOv11-based Deep Learning architecture of the <strong>TEKNOFEST</strong> autonomous vehicle.`,
-    `I build high-performance systems that integrate hardware and software. <strong>Open to international collaborations and training.</strong>`,
+    `At <strong>OdakGIS</strong>, I develop enterprise-scale GIS platforms; I lead the YOLOv11-based Deep Learning architecture for the autonomous vehicle competing in the <strong>TEKNOFEST</strong> competition.`,
+    `I build high-performance systems that integrate hardware and software.`,
   ],
 };
 
