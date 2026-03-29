@@ -1,4 +1,11 @@
-// ─── Bilingual Content Data ───
+/**
+ * @file content.js
+ * @description Centralized data store for the portfolio. 
+ * Supports full localization (TR/EN) for all UI strings, professional experiences, and project metadata.
+ * Designed for easy maintenance and scalability without modifying component logic.
+ */
+
+// ─── Bilingual Content Data (Identity & Metadata) ───
 
 export const PERSONAL = {
   name: "Onur Samet Özkan",
@@ -17,33 +24,33 @@ export const PERSONAL = {
 
 export const STATS = {
   tr: [
-    { number: "7+",  label: "Proje" },
-    { number: "2",   label: "Yıl Deneyim" },
-    { number: "C2",  label: "İngilizce" },
-    { number: "5",   label: "Dil Bilgisi" },
+    { number: "7+", label: "Proje" },
+    { number: "2", label: "Yıl Deneyim" },
+    { number: "C2", label: "İngilizce" },
+    { number: "5", label: "Dil Bilgisi" },
   ],
   en: [
-    { number: "7+",  label: "Projects" },
-    { number: "2",   label: "Years Exp." },
-    { number: "C2",  label: "English" },
-    { number: "5",   label: "Languages" },
+    { number: "7+", label: "Projects" },
+    { number: "2", label: "Years Exp." },
+    { number: "C2", label: "English" },
+    { number: "5", label: "Languages" },
   ],
 };
 
 export const INFO_CARDS = {
   tr: [
     { icon: "graduation-cap", title: "Atılım Üniversitesi", sub: "Bilişim Sistemleri Müh. — 2024–2028" },
-    { icon: "briefcase",      title: "OdakGIS — Full Stack Developer", sub: "Ekim 2025 – Devam · Ankara" },
-    { icon: "bot",             title: "TEKNOFEST Otonom Araç", sub: "Derin Öğrenme Sorumlusu · 2026" },
-    { icon: "bar-chart",       title: "Miuul Veri Analitiği Bootcamp", sub: "2025–2026 · Online" },
-    { icon: "map-pin",         title: "Ankara, Türkiye", sub: "Uzaktan ve yerinde çalışmaya açık" },
+    { icon: "briefcase", title: "OdakGIS — Full Stack Developer", sub: "Ekim 2025 – Devam · Ankara" },
+    { icon: "bot", title: "TEKNOFEST Otonom Araç", sub: "Derin Öğrenme Sorumlusu · 2026" },
+    { icon: "bar-chart", title: "Miuul Veri Analitiği Bootcamp", sub: "2025–2026 · Online" },
+    { icon: "map-pin", title: "Ankara, Türkiye", sub: "Uzaktan ve yerinde çalışmaya açık" },
   ],
   en: [
     { icon: "graduation-cap", title: "Atılım University", sub: "Information Systems Eng. — 2024–2028" },
-    { icon: "briefcase",      title: "OdakGIS — Full Stack Developer", sub: "Oct 2025 – Present · Ankara" },
-    { icon: "bot",             title: "TEKNOFEST Autonomous Vehicle", sub: "Deep Learning Lead · 2026" },
-    { icon: "bar-chart",       title: "Miuul Data Analytics Bootcamp", sub: "2025–2026 · Online" },
-    { icon: "map-pin",         title: "Ankara, Turkey", sub: "Open to remote & on-site work" },
+    { icon: "briefcase", title: "OdakGIS — Full Stack Developer", sub: "Oct 2025 – Present · Ankara" },
+    { icon: "bot", title: "TEKNOFEST Autonomous Vehicle", sub: "Deep Learning Lead · 2026" },
+    { icon: "bar-chart", title: "Miuul Data Analytics Bootcamp", sub: "2025–2026 · Online" },
+    { icon: "map-pin", title: "Ankara, Turkey", sub: "Open to remote & on-site work" },
   ],
 };
 
@@ -60,6 +67,7 @@ export const ABOUT_TEXT = {
   ],
 };
 
+// ─── Experience Section Data ───
 export const EXPERIENCE = {
   tr: [
     {
@@ -68,9 +76,9 @@ export const EXPERIENCE = {
       role: "Full Stack Developer · Yetenek Kuşağı",
       location: "Ankara, TR",
       bullets: [
-        "Gayrimenkul Yönetim Sistemi (REMS) altyapısında aktif geliştirici olarak görev alıyorum",
-        ".NET ve Angular tabanlı GIS çözümlerinin frontend/backend entegrasyonlarını sağlıyorum",
-        "Semgrep ve SonarQube ile SAST süreçlerini yürütüyor, güvenlik zafiyetlerini proaktif olarak önlüyorum",
+        "Gayrimenkul Yönetim Sistemi (REMS) altyapısında geliştirmeyi öğreniyorum",
+        ".NET ve Angular tabanlı GIS çözümlerinin frontend/backend entegrasyonlarını yapmayı öğreniyorum",
+        "Semgrep ve SonarQube ile SAST süreçlerini öğreniyor, güvenlik zafiyetlerini proaktif olarak nasıl önleyebileceğim hakkında deneyim sahibi oluyorum",
         "Clean Code prensiplerine uygun, yüksek standartlarda geliştirmeler yapıyorum",
       ],
       tags: [".NET", "Angular", "GIS", "SAST", "C#", "TypeScript"],
@@ -94,9 +102,9 @@ export const EXPERIENCE = {
       role: "Full Stack Developer · Talent Program",
       location: "Ankara, TR",
       bullets: [
-        "Active developer on the Real Estate Management System (REMS) infrastructure",
-        "Integrating frontend/backend of .NET and Angular-based GIS solutions",
-        "Running SAST processes with Semgrep and SonarQube, proactively preventing security vulnerabilities",
+        "Learning to develop the infrastructure of the Real Estate Management System (REMS)",
+        "Learning frontend/backend integration of .NET and Angular-based GIS solutions",
+        "Learning SAST processes with Semgrep and SonarQube to gain experience in proactively preventing security vulnerabilities",
         "Developing to high standards following Clean Code principles",
       ],
       tags: [".NET", "Angular", "GIS", "SAST", "C#", "TypeScript"],
@@ -115,6 +123,7 @@ export const EXPERIENCE = {
   ],
 };
 
+// ─── Projects Section Data (Bento Grid) ───
 export const PROJECTS = {
   tr: [
     {
@@ -151,6 +160,11 @@ export const PROJECTS = {
       icon: "gamepad", name: "Oyun Geliştirme & Dijital Varlık",
       desc: "Unreal Engine asset paketleri, indie oyunlar (Space Shooter, Hack 'n' Slash, Neon Arena Survival) ve Game Jam Ankara 2024 — Cat Hotel.",
       tech: ["Unreal Engine", "C++", "Game Dev", "JavaScript"], span: 7, large: true,
+    },
+    {
+      icon: "bell", name: "AtılımDuyuru",
+      desc: "[Geliştirme Aşamasında] Hem duyuru paylaşabilen hem de öğrenci dersleri girince sınav tarihi hatırlatan asistan botu. Gemini entegrasyonu üzerine çalışılıyor.",
+      tech: ["Python", "Gemini AI", "Bot Development"], span: 5,
     },
   ],
   en: [
@@ -189,9 +203,15 @@ export const PROJECTS = {
       desc: "Unreal Engine asset packages, indie games (Space Shooter, Hack 'n' Slash, Neon Arena Survival) and Game Jam Ankara 2024 — Cat Hotel.",
       tech: ["Unreal Engine", "C++", "Game Dev", "JavaScript"], span: 7, large: true,
     },
+    {
+      icon: "bell", name: "AtılımDuyuru",
+      desc: "[In Development] An assistant bot that shares announcements and reminds students of exam dates, currently working on Gemini integration.",
+      tech: ["Python", "Gemini AI", "Bot Development"], span: 5,
+    },
   ],
 };
 
+// ─── Technical Skill Categories ───
 export const SKILL_CATEGORIES = {
   tr: [
     { label: "Programlama Dilleri", items: ["C#", "TypeScript", "Python", "C++", "C", "Dart", "SQL", "JavaScript"] },
@@ -206,40 +226,40 @@ export const SKILL_CATEGORIES = {
 };
 
 export const LANGUAGES_DATA = [
-  { name: { tr: "Türkçe", en: "Turkish" },     level: { tr: "Anadil", en: "Native" }, pct: 100 },
-  { name: { tr: "İngilizce", en: "English" },   level: "C2",     pct: 97  },
-  { name: { tr: "Almanca", en: "German" },      level: "B1",     pct: 55  },
-  { name: { tr: "İspanyolca", en: "Spanish" },  level: "A2",     pct: 28  },
-  { name: { tr: "Fransızca", en: "French" },    level: "A1",     pct: 14  },
+  { name: { tr: "Türkçe", en: "Turkish" }, level: { tr: "Anadil", en: "Native" }, pct: 100 },
+  { name: { tr: "İngilizce", en: "English" }, level: "C2", pct: 97 },
+  { name: { tr: "Almanca", en: "German" }, level: "B1", pct: 55 },
+  { name: { tr: "İspanyolca", en: "Spanish" }, level: "A2", pct: 28 },
+  { name: { tr: "Fransızca", en: "French" }, level: "A1", pct: 14 },
 ];
 
 export const CERTIFICATIONS = [
-  { icon: "graduation-cap", name: "CS50",                              org: "Harvard" },
-  { icon: "layers",         name: "IBM Full Stack Development",        org: "IBM" },
-  { icon: "brain",          name: "IBM Machine Learning",              org: "IBM" },
-  { icon: "clipboard",      name: "Foundations of Project Management", org: "Google" },
-  { icon: "bar-chart",      name: "Lean Six Sigma",                    org: "Yellow/White Belt" },
-  { icon: "code",           name: "Introduction to Software Engineering", org: "IBM" },
-  { icon: "code",           name: "CodeHub & Tech Camp",               org: "Talentcoders" },
-  { icon: "code",           name: "Angular 101",                       org: "Turkcell Geleceği Yazanlar" },
-  { icon: "brain",          name: "Introduction to Machine Learning",  org: "Atılım Robot Topluluğu" },
-  { icon: "shield",         name: { tr: "Kariyer ve Yetkinlik Buluşmaları", en: "Career & Competency Meetings" },  org: "Savunma Sanayii Akademi" },
-  { icon: "globe",          name: "Vodafone'da Bir Gün: Network",      org: "Vodafone" },
-  { icon: "trending-up",    name: { tr: "Genç Yeni Nesil Kariyer Okulu", en: "Young New Gen Career School" }, org: "Garanti BBVA" },
+  { icon: "graduation-cap", name: "CS50", org: "Harvard" },
+  { icon: "layers", name: "IBM Full Stack Development", org: "IBM" },
+  { icon: "brain", name: "IBM Machine Learning", org: "IBM" },
+  { icon: "clipboard", name: "Foundations of Project Management", org: "Google" },
+  { icon: "bar-chart", name: "Lean Six Sigma", org: "Yellow/White Belt" },
+  { icon: "code", name: "Introduction to Software Engineering", org: "IBM" },
+  { icon: "code", name: "CodeHub & Tech Camp", org: "Talentcoders" },
+  { icon: "code", name: "Angular 101", org: "Turkcell Geleceği Yazanlar" },
+  { icon: "brain", name: "Introduction to Machine Learning", org: "Atılım Robot Topluluğu" },
+  { icon: "shield", name: { tr: "Kariyer ve Yetkinlik Buluşmaları", en: "Career & Competency Meetings" }, org: "Savunma Sanayii Akademi" },
+  { icon: "globe", name: "Vodafone'da Bir Gün: Network", org: "Vodafone" },
+  { icon: "trending-up", name: { tr: "Genç Yeni Nesil Kariyer Okulu", en: "Young New Gen Career School" }, org: "Garanti BBVA" },
 ];
 
 export const FOCUS_AREAS = {
   tr: [
-    { icon: "globe",    title: "Full-Stack Web & Mobil",        sub: ".NET · Angular · Flutter · React Native" },
-    { icon: "brain",    title: "Yapay Zeka & Derin Öğrenme",     sub: "YOLOv11 · TensorFlow · LLM Entegrasyon" },
-    { icon: "cpu",      title: "Gömülü Sistem & IoT",           sub: "STM32 · C/C++ · Robotik · Teleoperasyon" },
-    { icon: "bar-chart",title: "Veri Analitiği & GIS",          sub: "Power BI · Leaflet · Python · SQL" },
+    { icon: "globe", title: "Full-Stack Web & Mobil", sub: ".NET · Angular · Flutter · React Native" },
+    { icon: "brain", title: "Yapay Zeka & Derin Öğrenme", sub: "YOLOv11 · TensorFlow · LLM Entegrasyon" },
+    { icon: "cpu", title: "Gömülü Sistem & IoT", sub: "STM32 · C/C++ · Robotik · Teleoperasyon" },
+    { icon: "bar-chart", title: "Veri Analitiği & GIS", sub: "Power BI · Leaflet · Python · SQL" },
   ],
   en: [
-    { icon: "globe",    title: "Full-Stack Web & Mobile",        sub: ".NET · Angular · Flutter · React Native" },
-    { icon: "brain",    title: "AI & Deep Learning",             sub: "YOLOv11 · TensorFlow · LLM Integration" },
-    { icon: "cpu",      title: "Embedded Systems & IoT",         sub: "STM32 · C/C++ · Robotics · Teleoperation" },
-    { icon: "bar-chart",title: "Data Analytics & GIS",           sub: "Power BI · Leaflet · Python · SQL" },
+    { icon: "globe", title: "Full-Stack Web & Mobile", sub: ".NET · Angular · Flutter · React Native" },
+    { icon: "brain", title: "AI & Deep Learning", sub: "YOLOv11 · TensorFlow · LLM Integration" },
+    { icon: "cpu", title: "Embedded Systems & IoT", sub: "STM32 · C/C++ · Robotics · Teleoperation" },
+    { icon: "bar-chart", title: "Data Analytics & GIS", sub: "Power BI · Leaflet · Python · SQL" },
   ],
 };
 
@@ -252,27 +272,28 @@ export const MARQUEE_ITEMS = [
 
 export const NAV_LINKS = {
   tr: [
-    { label: "Hakkımda",   href: "#about" },
-    { label: "Deneyim",    href: "#experience" },
-    { label: "Projeler",   href: "#projects" },
+    { label: "Hakkımda", href: "#about" },
+    { label: "Deneyim", href: "#experience" },
+    { label: "Projeler", href: "#projects" },
     { label: "Yetenekler", href: "#skills" },
   ],
   en: [
-    { label: "About",      href: "#about" },
+    { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
-    { label: "Projects",   href: "#projects" },
-    { label: "Skills",     href: "#skills" },
+    { label: "Projects", href: "#projects" },
+    { label: "Skills", href: "#skills" },
   ],
 };
 
 export const CONTACT_LINKS = [
-  { href: `mailto:${PERSONAL.email}`,   label: PERSONAL.email,           cls: "p" },
-  { href: PERSONAL.github,              label: "GitHub / OnurSamett",    cls: "o" },
-  { href: PERSONAL.linkedin,            label: "LinkedIn",               cls: "o" },
-  { href: `tel:${PERSONAL.phone}`,      label: PERSONAL.phone,           cls: "o" },
+  { href: `mailto:${PERSONAL.email}`, label: PERSONAL.email, cls: "p" },
+  { href: PERSONAL.github, label: "GitHub / OnurSamett", cls: "o" },
+  { href: PERSONAL.linkedin, label: "LinkedIn", cls: "o" },
+  { href: `tel:${PERSONAL.phone}`, label: PERSONAL.phone, cls: "o" },
 ];
 
 // ─── UI Strings ───
+// ─── Global UI Localization Strings ───
 export const UI = {
   tr: {
     seeProjects: "Projeleri Gör",

@@ -1,3 +1,8 @@
+/**
+ * @file i18n.js
+ * @description Localization engine. Manages language state, persistence in localStorage, 
+ * and provides a translation helper function (t) for reactive UI updates.
+ */
 // ─── i18n — Language Management ───
 
 let currentLang = localStorage.getItem('lang') || 'tr';

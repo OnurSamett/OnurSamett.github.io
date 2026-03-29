@@ -48,7 +48,7 @@ export function renderHero() {
         <p style="margin-top:32px;max-width:500px;font-size:var(--text-md);color:var(--text-dim);line-height:1.8;animation:fadeUp .8s .5s both">${t(PERSONAL.description)}</p>
 
         <div style="margin-top:40px;display:flex;gap:12px;flex-wrap:wrap;animation:fadeUp .8s .65s both">
-          <a href="#projects" class="btn-a">${ui.seeProjects} ${icon('arrow-right', 15)}</a>
+          <a href="#projeler" class="btn-a">${ui.seeProjects} ${icon('arrow-right', 15)}</a>
           <a href="${PERSONAL.github}" target="_blank" rel="noreferrer" class="btn-b">${icon('github', 15)} GitHub</a>
           <a href="mailto:${PERSONAL.email}" class="btn-b">${icon('mail', 15)} ${ui.email}</a>
         </div>

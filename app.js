@@ -1,3 +1,8 @@
+/**
+ * @file app.js
+ * @description Application entry point. Orchestrates component rendering, 
+ * accessibility features (custom cursor), and scroll-reveal animations.
+ */
 // ─── Main App Entry ───
 import { initCursor }       from './components/cursor.js';
 import { renderNav }        from './components/nav.js';
@@ -44,7 +49,7 @@ function init() {
   });
 }
 
-// ─── Scroll Reveal ───
+// ─── Intersection Observer for Scroll Animations ───
 let observer;
 function initScrollReveal() {
   // Disconnect old observer
